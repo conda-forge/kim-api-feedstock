@@ -8,7 +8,7 @@ package:
 source:
   - url: https://s3.openkim.org/kim-api/{{ name }}-{{ version }}.txz
     sha256: 88a5416006c65a2940d82fad49de0885aead05bfa8b59f87d287db5516b9c467
-  - path: diff.patch
+  - patch: diff.patch
 
 build:
   number: 3
