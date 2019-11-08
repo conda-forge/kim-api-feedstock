@@ -1,0 +1,24 @@
+diff --git a/cpp/src/KIM_CollectionsImplementation.cpp b/cpp/src/KIM_CollectionsImplementation.cpp
+index 65cd9c33..3c4e9fae 100644
+--- a/cpp/src/KIM_CollectionsImplementation.cpp
++++ b/cpp/src/KIM_CollectionsImplementation.cpp
+@@ -482,9 +482,16 @@ void PrivateGetSystemDirs(ItemTypeToStringMap & dirsMap)
+ {
+   using namespace KIM::COLLECTION_ITEM_TYPE;
+
+-  dirsMap[modelDriver] = KIM_SYSTEM_MODEL_DRIVERS_DIR;
+-  dirsMap[portableModel] = KIM_SYSTEM_PORTABLE_MODELS_DIR;
+-  dirsMap[simulatorModel] = KIM_SYSTEM_SIMULATOR_MODELS_DIR;
++  std::string md = KIM_SYSTEM_MODEL_DRIVERS_DIR;
++  md.erase(md.find_first_of('\0'), std::string::npos);
++  std::string pm = KIM_SYSTEM_PORTABLE_MODELS_DIR;
++  pm.erase(pm.find('\0'), std::string::npos);
++  std::string sm = KIM_SYSTEM_SIMULATOR_MODELS_DIR;
++  sm.erase(sm.find('\0'), std::string::npos);
++
++  dirsMap[modelDriver] = md;
++  dirsMap[portableModel] = pm;
++  dirsMap[simulatorModel] = sm;
+ }
+
+ void PrivateGetListOfItemNamesByCollectionAndType(
