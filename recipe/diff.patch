@@ -1,7 +1,7 @@
-diff --git a/cpp/src/KIM_CollectionsImplementation.cpp b/cpp/src/KIM_CollectionsImplementation.cpp
+diff --git a/kim-api-*/cpp/src/KIM_CollectionsImplementation.cpp b/kim-api-*/cpp/src/KIM_CollectionsImplementation.cpp
 index 65cd9c33..3c4e9fae 100644
---- a/cpp/src/KIM_CollectionsImplementation.cpp
-+++ b/cpp/src/KIM_CollectionsImplementation.cpp
+--- a/kim-api-*/cpp/src/KIM_CollectionsImplementation.cpp
++++ b/kim-api-*/cpp/src/KIM_CollectionsImplementation.cpp
 @@ -482,9 +482,16 @@ void PrivateGetSystemDirs(ItemTypeToStringMap & dirsMap)
  {
    using namespace KIM::COLLECTION_ITEM_TYPE;
