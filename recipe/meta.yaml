@@ -21,9 +21,7 @@ requirements:
     - cmake
     - make
     - vim
-    - patch
     - tar
-    - xz
   run:
     - wget
 
