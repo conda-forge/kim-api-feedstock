@@ -1,5 +1,5 @@
 {% set name = "kim-api" %}
-{% set version = "2.1.3" %}
+{% set version = "2.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,10 @@ package:
 
 source:
   - url: https://s3.openkim.org/kim-api/{{ name }}-{{ version }}.txz
-    sha256: 88a5416006c65a2940d82fad49de0885aead05bfa8b59f87d287db5516b9c467
-  - path: diff.patch
+    sha256: 8a9301bb2b718986350a6f0dab758168002d4b10badae5b1b70d19f73ad46f80
 
 build:
-  number: 6
+  number: 0
   skip: true  # [win]
 
 requirements:
