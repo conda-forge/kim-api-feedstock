@@ -3,7 +3,7 @@ About kim-api
 
 Home: https://openkim.org
 
-Package license: CDDL-1.0
+Package license: LGPL-2.1-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/kim-api-feedstock/blob/main/LICENSE.txt)
 
