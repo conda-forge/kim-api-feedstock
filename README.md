@@ -159,5 +159,6 @@ Feedstock Maintainers
 =====================
 
 * [@ellio167](https://github.com/ellio167/)
+* [@brendonwaters](https://github.com/brendonwaters/)
 * [@jan-janssen](https://github.com/jan-janssen/)
 
