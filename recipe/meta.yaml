@@ -17,7 +17,7 @@ requirements:
   build:
     - {{ compiler('cxx') }}
     - {{ compiler('fortran') }}
-    - cmake
+    - cmake ==3.27.9
     - make
     - vim
     - patch
@@ -26,10 +26,16 @@ requirements:
   run:
     - wget
     - pkg-config
+    - cmake ==3.27.9
+    - make
+    - {{ compiler('cxx') }}
+    - {{ compiler('c') }}
+    - {{ compiler('fortran') }}
 
 test:
   commands:
     - kim-api-collections-management list
+    - kim-api-collections-management install CWD SW_StillingerWeber_1985_Si__MO_405512056662_006
 
 about:
   home: https://openkim.org
