@@ -10,14 +10,14 @@ source:
     sha256: 93673bb8fbc0625791f2ee67915d1672793366d10cabc63e373196862c14f991
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
   build:
     - {{ compiler('cxx') }}
     - {{ compiler('fortran') }}
-    - cmake ==3.27.9
+    - cmake
     - make
     - vim
     - patch
@@ -26,7 +26,7 @@ requirements:
   run:
     - wget
     - pkg-config
-    - cmake ==3.27.9
+    - cmake
     - make
     - {{ compiler('cxx') }}
     - {{ compiler('c') }}
