@@ -35,7 +35,7 @@ requirements:
 test:
   commands:
     - kim-api-collections-management list
-    - kim-api-collections-management install CWD SW_StillingerWeber_1985_Si__MO_405512056662_006
+    - kim-api-collections-management install system SW_StillingerWeber_1985_Si__MO_405512056662_006
 
 about:
   home: https://openkim.org
