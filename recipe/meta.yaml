@@ -10,7 +10,7 @@ source:
     sha256: 93673bb8fbc0625791f2ee67915d1672793366d10cabc63e373196862c14f991
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
@@ -26,10 +26,16 @@ requirements:
   run:
     - wget
     - pkg-config
+    - cmake
+    - make
+    - {{ compiler('cxx') }}
+    - {{ compiler('c') }}
+    - {{ compiler('fortran') }}
 
 test:
   commands:
     - kim-api-collections-management list
+    - kim-api-collections-management install system SW_StillingerWeber_1985_Si__MO_405512056662_006
 
 about:
   home: https://openkim.org
