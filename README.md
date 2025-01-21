@@ -22,14 +22,7 @@ Current build status
 ====================
 
 
-<table><tr>
-    <td>Travis</td>
-    <td>
-      <a href="https://app.travis-ci.com/conda-forge/kim-api-feedstock">
-        <img alt="linux" src="https://img.shields.io/travis/com/conda-forge/kim-api-feedstock/main.svg?label=Linux">
-      </a>
-    </td>
-  </tr>
+<table>
     
   <tr>
     <td>Azure</td>
@@ -206,7 +199,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@ilia-nikiforov-umn](https://github.com/ilia-nikiforov-umn/)
 * [@brendonwaters](https://github.com/brendonwaters/)
 * [@ellio167](https://github.com/ellio167/)
 * [@jan-janssen](https://github.com/jan-janssen/)
