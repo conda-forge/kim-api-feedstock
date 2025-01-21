@@ -23,7 +23,7 @@ requirements:
     - vim
     - patch
     - tar
-    - xz
+    - xz-tools
   run:
     - wget
     - pkg-config
