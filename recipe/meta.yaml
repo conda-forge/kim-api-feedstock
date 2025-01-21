@@ -29,6 +29,7 @@ requirements:
     - pkg-config
     - cmake
     - make
+    - xz-tools
     - {{ compiler('cxx') }}
     - {{ compiler('c') }}
     - {{ compiler('fortran') }}
