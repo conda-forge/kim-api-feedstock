@@ -10,24 +10,26 @@ source:
     sha256: 93673bb8fbc0625791f2ee67915d1672793366d10cabc63e373196862c14f991
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
 
 requirements:
   build:
     - {{ compiler('cxx') }}
     - {{ compiler('fortran') }}
+    - {{ stdlib("c") }}
     - cmake
     - make
     - vim
     - patch
     - tar
-    - xz
+    - xz-tools
   run:
     - wget
     - pkg-config
     - cmake
     - make
+    - xz-tools
     - {{ compiler('cxx') }}
     - {{ compiler('c') }}
     - {{ compiler('fortran') }}
@@ -53,6 +55,6 @@ about:
 
 extra:
   recipe-maintainers:
-    - brendonwaters
+    - ilia-nikiforov-umn
     - jan-janssen
     - ellio167
